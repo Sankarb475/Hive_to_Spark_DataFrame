@@ -12,6 +12,8 @@ val dummy4 : DataFrame = spark.table("master_database.dummy_table4")
 val dummy5 : DataFrame = spark.table("master_database.dummy_table5")
 
 
+//Equivalent dataframe API to the Hive query but better performance
+
 val outputDataFrame : DataFrame = dummy1.alias("src").join(dummy2.alias("psd"), Seq("country_details","Playlist_Id"), "inner")
       .join(dummy3.alias("ba"), Seq("brand_details"), "left_outer")
       .join(dummy4.alias("sf"), Seq("country_details"), "inner")
