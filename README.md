@@ -9,3 +9,6 @@ Steps ::
 1) Registering the Hive table into dataframe
 2) converting the Hive query into equivalent scala code
 3) run the code into spark-shell
+
+-- In case you have Nested selects in your Hive query, the easiest way to convert it into equivalent scala is to have each 
+nested select query first registered as dataframe, and then use those dataframes to reach to the final output dataframe.
