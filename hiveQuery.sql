@@ -1,3 +1,5 @@
+-- Hive query which is to be converted into DataFrame API
+
 SELECT
 src.unique_Id,
 src.playlist_unique_Id,
@@ -42,3 +44,5 @@ To_Date((from_unixtime((unix_timestamp(psd.Change_ts) + geo.value*3600),'yyyy-MM
 src.supplier_name,
 ba.Display_Name,
 src.supplier_id
+
+
