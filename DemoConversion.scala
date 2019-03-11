@@ -1,5 +1,4 @@
-    
-//Registering hive tables into spark-shell
+//Registering the hive tables into spark-shell
 val dummy1 : DataFrame = spark.table("master_database.dummy_table1")
       .select("playlist_unique_Id","code_Id","supplier_id","available_date","Visible_Override_Ind_Episode","pass_details")
 
