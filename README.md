@@ -12,3 +12,5 @@ Steps ::
 
 -- In case you have Nested selects in your Hive query, the easiest way to convert it into equivalent scala is to have each 
 nested select query first registered as dataframe, and then use those dataframes to reach to the final output dataframe.
+
+--testing
